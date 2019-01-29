@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	background: #1a1c20;
+	color:#ffffff;
+}
+
+
+/* Globals */
+a.a{
+	color: #ff214f;
+}
+
+.mb50{
+	margin-bottom: 50px;
+}
+.dk_bg{
+	background: #111111;
+	width: 100%;
+}
+
+.red_text{
+	color: #ff214f;
+}
+
+.blue_text{
+	color: #ff214f;
+}
+
+
+/* Header */
+header{
+	width: 100%;
+	max-height: 600px;
+	display: flex;	
+}
+
+.main_info{
+	width: 50%;
+	padding: 40px 0;
+}
+
+.main_info p{
+	margin-bottom: 10px;
+}
+
+.main_info p.blue_text{
+	line-height: 1;
+	margin-bottom: 0;
+}
+
+.main_info a{
+	font-size: 21px;
+}
+
+.main_img{
+	width: 50%;
+	text-align: right;	
+}
+.upwork:after {
+    content: "Up";
+    font-size: 10px;
+    background: #6FDA44;
+    width: 19.75px;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 1.6px 0 1px;
+    color: white;
+}
+
+.fa-facebook-square{
+	color: #496AA9;
+}
+
+.fa-github-square{
+	color: #676767;
+}
+
+
+/* About Me */
+
+.about_me{
+	width: 30%;
+	padding: 10px;	
+	/*border: 1px solid #ff214f;*/
+	border: 1px solid #ff214f;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	min-width: 200px;
+}
+.last{
+	width: 65%;
+}
+
+.skills p{
+	margin-bottom: 0;
+}
+
+footer{
+	background: #000000;
+	text-align: center;
+	padding: 5px 0;
+}
+
+/*.go_to_up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid #ff214f;
+    padding: 10px;
+    border-radius: 10%;
+    transition: ease 0.4s;
+}
+
+.go_to_up:hover {
+    cursor: pointer;
+    background: #ff214f;
+}
+
+.go_to_up i {
+    margin-right: 0 !important;
+    color: #ff214f;
+}
+
+.go_to_up:hover i {
+    color: #111111;
+}*/
+
+.go_to_up{
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #ffffff;
+    background: #ff6550;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.go_to_up .fas.fa-arrow-up {
+    transition: ease 0.4s;
+}
+
+
+.go_to_up:hover .fas.fa-arrow-up {
+    transform: rotate(720deg);
+}
+
+
+.go_to_up:hover {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+@media (max-width: 1100px){
+	.main_img{
+		display: none;
+	}
+	.main_info{
+		width: 100%;
+	}
+}
+
+@media (max-width: 900px){
+	.about_me{
+		width: 100%;
+	}
+}
